@@ -134,14 +134,16 @@ updateValue([1, 2, 3], 1, 10); // => [1, 10, 3]
 
 
 //4  not done yet
-/* const onlyString = function (array) {
-    for (let i = 0; i < array.length; i++) {
-        let newArr = typeof array[i] == "";
-        return newArr = array.filter();
+ const onlyString = function (array) {
+    for (let i = 0; i < array.length; i++) { 
+     if(typeof(array) === "String"){
+        return 'g'; 
+     }
+     
     }
   };
   onlyString(["one",12,"hi",true , 88 , "12"]); // => ["one","hi","12"]
-  onlyString([10, 20, 30, 40, 50, 60,false]); // => [] */
+  onlyString([10, 20, 30, 40, 50, 60,false]); // => [] 
 
   
 //5
@@ -184,3 +186,4 @@ const reversString = function (string) {
 };
 reversString("Hello"); // => "olleH"
 reversString("John"); // => "nhoJ"
+

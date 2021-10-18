@@ -133,14 +133,15 @@ updateValue([1, 2, 3], 0, 10); // => [10, 2, 3]
 updateValue([1, 2, 3], 1, 10); // => [1, 10, 3]
 
 
-//4  not done yet
- const onlyString = function (array) {
+//4  
+ const onlyString = function (array) { //can use filter
+     let res = []
     for (let i = 0; i < array.length; i++) { 
-     if(typeof(array) === "String"){
-        return 'g'; 
+     if(typeof(array[i]) === "string"){
+        res.push(array[i])
      }
-     
     }
+    return res
   };
   onlyString(["one",12,"hi",true , 88 , "12"]); // => ["one","hi","12"]
   onlyString([10, 20, 30, 40, 50, 60,false]); // => [] 
